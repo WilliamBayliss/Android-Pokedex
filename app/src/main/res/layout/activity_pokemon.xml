@@ -49,11 +49,13 @@
         android:textAlignment="center"
         android:paddingTop="3dp"
         android:textSize="16dp" />
+
     <Button
+        android:id="@+id/catch_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/catch_button"
-        android:text="Catch"
+        android:backgroundTint="#FF0000"
         android:onClick="toggleCatch"
-        />
+        android:text="Catch"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
