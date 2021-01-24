@@ -26,12 +26,34 @@
         android:id="@+id/pokemon_type1"
         android:textAlignment="center"
         android:textSize="16dp"
-        android:paddingTop="5dp" />
+        android:paddingTop="10dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pokemon_type2"
         android:textAlignment="center"
         android:textSize="16dp"
-        android:paddingTop="5dp" />
+        android:paddingTop="3dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_ability1"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_ability2"
+        android:textAlignment="center"
+        android:paddingTop="3dp"
+        android:textSize="16dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/catch_button"
+        android:text="Catch"
+        android:onClick="toggleCatch"
+        />
 </LinearLayout>

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -22,9 +24,11 @@ public class PokemonActivity extends AppCompatActivity {
     private TextView numberTextView;
     private TextView type1TextView;
     private TextView type2TextView;
+    private TextView ability1TextView;
+    private TextView ability2TextView;
     private String url;
     private RequestQueue requestQueue;
-
+    private Button catchButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,9 @@ public class PokemonActivity extends AppCompatActivity {
         numberTextView = findViewById(R.id.pokemon_number);
         type1TextView = findViewById(R.id.pokemon_type1);
         type2TextView = findViewById(R.id.pokemon_type2);
+        ability1TextView = findViewById(R.id.pokemon_ability1);
+        ability2TextView = findViewById(R.id.pokemon_ability2);
+        catchButton = findViewById(R.id.catch_button);
 
         load();
     }
@@ -50,6 +57,20 @@ public class PokemonActivity extends AppCompatActivity {
                 try {
                     nameTextView.setText(response.getString("name"));
                     numberTextView.setText(String.format("#%03d", response.getInt("id")));
+
+                    JSONArray abilityEntries = response.getJSONArray("abilities");
+                    for (int i = 0; i < abilityEntries.length(); i++) {
+                        JSONObject abilityEntry = abilityEntries.getJSONObject(i);
+                        int slot = abilityEntry.getInt("slot");
+                        String ability = abilityEntry.getJSONObject("ability").getString("name");
+
+                        if (slot == 1) {
+                            ability1TextView.setText(ability);
+                        }
+                        else if (slot == 2) {
+                            ability2TextView.setText(ability);
+                        }
+                    }
 
                     JSONArray typeEntries = response.getJSONArray("types");
                     for (int i = 0; i < typeEntries.length(); i++) {
@@ -76,5 +97,16 @@ public class PokemonActivity extends AppCompatActivity {
         });
 
         requestQueue.add(request);
+    }
+    public boolean pokemonCaught = false;
+    public void toggleCatch(View view) {
+        // gotta catch 'em all!rue;
+         if (!pokemonCaught) {
+             pokemonCaught = true;
+             catchButton.setText("Release");
+         } else {
+          pokemonCaught = false;
+          catchButton.setText("Catch");
+         }
     }
 }

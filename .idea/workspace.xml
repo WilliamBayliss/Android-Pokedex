@@ -6,7 +6,11 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc156cc-a0c7-437c-a753-c1985b5d2931" name="Default Changelist" comment="" />
+    <list default="true" id="5dc156cc-a0c7-437c-a753-c1985b5d2931" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nX4mBrYg7UFzPrSf8R2XcxBPzS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -128,9 +136,21 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="117" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611525956560" />
-    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1611524284068">
+    <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1611527078012">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1611524284068" />
+    <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1611527078012" />
+    <state x="393" y="453" width="281" height="207" key="Github.ShareDialog" timestamp="1611527199124">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="393" y="453" width="281" height="207" key="Github.ShareDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611527199124" />
+    <state x="170" y="235" width="717" height="644" key="Github.UntrackedFilesDialog" timestamp="1611527218508">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="170" y="235" width="717" height="644" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611527218508" />
+    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1611527359868">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1611527359868" />
   </component>
 </project>
