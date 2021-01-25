@@ -124,9 +124,11 @@ public class PokemonActivity extends AppCompatActivity {
                 int slot = abilityEntry.getInt("slot");
                 String ability = abilityEntry.getJSONObject("ability").getString("name");
                 if (slot == 1) {
-                    ability1TextView.setText(ability);
+                    String pokeAbility1 = ability.substring(0, 1).toUpperCase() + ability.substring(1);
+                    ability1TextView.setText(pokeAbility1);
                 } else if (slot == 2) {
-                    ability2TextView.setText(ability);
+                    String pokeAbility2 = ability.substring(0, 1).toUpperCase() + ability.substring(1);
+                    ability2TextView.setText(pokeAbility2);
                 }
             }
 
@@ -142,9 +144,11 @@ public class PokemonActivity extends AppCompatActivity {
                 int slot = typeEntry.getInt("slot");
                 String type = typeEntry.getJSONObject("type").getString("name");
                 if (slot == 1) {
-                    type1TextView.setText(type);
+                    String poke_type1 = type.toUpperCase();
+                    type1TextView.setText(poke_type1);
                 } else if (slot == 2) {
-                    type2TextView.setText(type);
+                    String poke_type2 = type.toUpperCase();
+                    type2TextView.setText(poke_type2);
                 }
             }
         } catch (JSONException e) {
