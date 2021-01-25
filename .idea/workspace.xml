@@ -5,13 +5,14 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc156cc-a0c7-437c-a753-c1985b5d2931" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +48,9 @@
     <property name="android.recentlyUsedThemes" value="android:Theme.Holo.Dialog" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -131,14 +136,26 @@
       <option name="project" value="LOCAL" />
       <updated>1611530048814</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed default colours to match pokeball theme!">
+      <created>1611531829539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611531829539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added abilities on PokemonActivity, added catch/release button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added abilities on PokemonActivity, added catch/release button" />
+    <MESSAGE value="Changed default colours to match pokeball theme!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed default colours to match pokeball theme!" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="72" y="288" width="950" height="537" key="#PSD" timestamp="1611533770407">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="72" y="288" width="950" height="537" key="#PSD/72.27.1848.1053@72.27.1848.1053" timestamp="1611533770407" />
     <state x="342" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1611523582424">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -159,10 +176,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="261" width="824" height="591" key="AndroidThemeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611531487102" />
-    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611530048336">
+    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611531829008">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611530048336" />
+    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611531829008" />
     <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1611527078012">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -175,13 +192,33 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="170" y="235" width="717" height="644" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611527218508" />
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611530070155">
+    <state width="878" height="231" key="GridCell.Tab.0.bottom" timestamp="1611539692772">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611530070155" />
-    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1611527359868">
+    <state width="878" height="231" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1611539692772" />
+    <state width="878" height="231" key="GridCell.Tab.0.center" timestamp="1611539692771">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1611527359868" />
+    <state width="878" height="231" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1611539692771" />
+    <state width="878" height="231" key="GridCell.Tab.0.left" timestamp="1611539692770">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="878" height="231" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1611539692770" />
+    <state width="878" height="231" key="GridCell.Tab.0.right" timestamp="1611539692771">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="878" height="231" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611539692771" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611531833422">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611531833422" />
+    <state x="305" y="468" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611534656308">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="305" y="468" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611534656308" />
+    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1611532115038">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="197" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1611532115038" />
   </component>
 </project>
