@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5dc156cc-a0c7-437c-a753-c1985b5d2931" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,13 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611531829539</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added save states to preserve caught/released pokemon, separated some functions in PokemonActivity for readability/debuggability.">
+      <created>1611547529638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611547529638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added abilities on PokemonActivity, added catch/release button" />
     <MESSAGE value="Changed default colours to match pokeball theme!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed default colours to match pokeball theme!" />
+    <MESSAGE value="Added save states to preserve caught/released pokemon, separated some functions in PokemonActivity for readability/debuggability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added save states to preserve caught/released pokemon, separated some functions in PokemonActivity for readability/debuggability." />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="288" width="950" height="537" key="#PSD" timestamp="1611533770407">
@@ -176,10 +183,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="261" width="824" height="591" key="AndroidThemeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611531487102" />
-    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611531829008">
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611547529307">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="73" y="103" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611531829008" />
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611547529307" />
     <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1611527078012">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -208,10 +215,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="878" height="231" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611539692771" />
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611531833422">
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611547545711">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611531833422" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611547545711" />
     <state x="305" y="468" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611534656308">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
