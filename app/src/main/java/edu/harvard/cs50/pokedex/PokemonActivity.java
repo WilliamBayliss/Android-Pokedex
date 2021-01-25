@@ -3,11 +3,15 @@ package edu.harvard.cs50.pokedex;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.SharedPreferences;
 import com.android.volley.Request;
@@ -20,17 +24,29 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.net.URL;
+
 public class PokemonActivity extends AppCompatActivity {
+    // Pokemon name
     private TextView nameTextView;
+    //Pokemon Pokedex #
     private TextView numberTextView;
+    //Pokemon types
     private TextView type1TextView;
     private TextView type2TextView;
+    //Pokemon Abilities
     private TextView ability1TextView;
     private TextView ability2TextView;
+    // Pokemon URL from API
     private String url;
     private RequestQueue requestQueue;
+    // Button to catch/release pokemon
     private Button catchButton;
+    // Saves whether pokemon has been caught for SharedPreferences
     private boolean pokemonCaught = false;
+    // Pokemon sprite
+    private ImageView imageView;
 
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
@@ -48,7 +64,9 @@ public class PokemonActivity extends AppCompatActivity {
         type2TextView = findViewById(R.id.pokemon_type2);
         ability1TextView = findViewById(R.id.pokemon_ability1);
         ability2TextView = findViewById(R.id.pokemon_ability2);
+        imageView = findViewById(R.id.pokemon_sprite);
         catchButton = findViewById(R.id.catch_button);
+
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         editor = preferences.edit();
@@ -67,6 +85,7 @@ public class PokemonActivity extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                loadSprites(response);
                 loadText(response);
                 loadTypes(response);
                 loadAbilities(response);
@@ -133,6 +152,34 @@ public class PokemonActivity extends AppCompatActivity {
         }
     }
 
+    public void loadSprites(JSONObject response) {
+        try {
+                String imgUrl = response.getJSONObject("sprites").getString("front_default");
+                new DownloadSpriteTask().execute(imgUrl);
+
+        } catch (JSONException e) {
+            Log.e("Pokedex", "Pokemon Sprite Error");
+        }
+    }
+
+    private class DownloadSpriteTask extends AsyncTask<String, Void, Bitmap> {
+        @Override
+        protected Bitmap doInBackground(String... strings) {
+            try {
+                URL url = new URL(strings[0]);
+                return BitmapFactory.decodeStream(url.openStream());
+            } catch (IOException e) {
+                Log.e("Pokedex", "Download SpriteError", e);
+                return null;
+            }
+        }
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            //Load bitmap into ImageView
+            imageView.setImageBitmap(bitmap);
+        }
+    }
+
 
     public void toggleCatch(View view) {
         // gotta catch 'em all!
@@ -151,6 +198,7 @@ public class PokemonActivity extends AppCompatActivity {
             editor.remove(name);
         }
     }
+
 
 
 }
