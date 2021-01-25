@@ -62,7 +62,7 @@ public class PokedexAdapter extends RecyclerView.Adapter<PokedexAdapter.PokedexV
     }
 
     public void loadPokemon() {
-        String url = "https://pokeapi.co/api/v2/pokemon?limit=151";
+        String url = "https://pokeapi.co/api/v2/pokemon?limit=1118";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
