@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5dc156cc-a0c7-437c-a753-c1985b5d2931" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/harvard/cs50/pokedex/PokemonActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pokemon.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611599583027</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added pokemon descriptions on PokemonActivity from pokeAPI">
+      <created>1611623145302</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611623145302</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +194,8 @@
     <MESSAGE value="Added pokemon sprites on PokemonActivity" />
     <MESSAGE value="Changed pokedex length from 150 to full 1118" />
     <MESSAGE value="Changed type, ability layouts to be on one row, capitalized first letters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed type, ability layouts to be on one row, capitalized first letters" />
+    <MESSAGE value="Added pokemon descriptions on PokemonActivity from pokeAPI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pokemon descriptions on PokemonActivity from pokeAPI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="288" width="950" height="537" key="#PSD" timestamp="1611533770407">
@@ -216,10 +222,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="261" width="824" height="591" key="AndroidThemeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611531487102" />
-    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611599582933">
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611623145112">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611599582933" />
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611623145112" />
     <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1611527078012">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -232,26 +238,26 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="170" y="235" width="717" height="644" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611527218508" />
-    <state width="878" height="178" key="GridCell.Tab.0.bottom" timestamp="1611622824598">
+    <state width="878" height="178" key="GridCell.Tab.0.bottom" timestamp="1611623014001">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824598" />
-    <state width="878" height="178" key="GridCell.Tab.0.center" timestamp="1611622824597">
+    <state width="878" height="178" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1611623014001" />
+    <state width="878" height="178" key="GridCell.Tab.0.center" timestamp="1611623014001">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824597" />
-    <state width="878" height="178" key="GridCell.Tab.0.left" timestamp="1611622824596">
+    <state width="878" height="178" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1611623014001" />
+    <state width="878" height="178" key="GridCell.Tab.0.left" timestamp="1611623014001">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824596" />
-    <state width="878" height="178" key="GridCell.Tab.0.right" timestamp="1611622824598">
+    <state width="878" height="178" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1611623014001" />
+    <state width="878" height="178" key="GridCell.Tab.0.right" timestamp="1611623014001">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824598" />
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611599587197">
+    <state width="878" height="178" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611623014001" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611623149408">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611599587197" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611623149408" />
     <state x="305" y="468" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611534656308">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

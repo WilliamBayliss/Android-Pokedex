@@ -77,6 +77,7 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:id="@+id/pokemon_description"
+        android:paddingBottom="20dp"
         android:textAlignment="center" />
     <Button
         android:id="@+id/catch_button"
