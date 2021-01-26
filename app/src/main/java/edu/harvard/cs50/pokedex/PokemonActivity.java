@@ -152,11 +152,9 @@ public class PokemonActivity extends AppCompatActivity {
                 if (slot == 1) {
                     String poke_type1 = type.toUpperCase();
                     type1TextView.setText(poke_type1);
-                    type1TextView.setVisibility(View.VISIBLE);
                 } else if (slot == 2) {
                     String poke_type2 = type.toUpperCase();
                     type2TextView.setText(poke_type2);
-                    type2TextView.setVisibility(View.VISIBLE);
                 }
             }
         } catch (JSONException e) {
