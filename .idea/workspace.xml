@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611597865840</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed type, ability layouts to be on one row, capitalized first letters">
+      <created>1611599583027</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611599583027</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,17 +188,18 @@
     <MESSAGE value="Changed text size from dp to sp" />
     <MESSAGE value="Added pokemon sprites on PokemonActivity" />
     <MESSAGE value="Changed pokedex length from 150 to full 1118" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed pokedex length from 150 to full 1118" />
+    <MESSAGE value="Changed type, ability layouts to be on one row, capitalized first letters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed type, ability layouts to be on one row, capitalized first letters" />
   </component>
   <component name="WindowStateProjectService">
     <state x="72" y="288" width="950" height="537" key="#PSD" timestamp="1611533770407">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="72" y="288" width="950" height="537" key="#PSD/72.27.1848.1053@72.27.1848.1053" timestamp="1611533770407" />
-    <state x="342" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1611523582424">
+    <state x="342" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1611621802985">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="342" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1611523582424" />
+    <state x="342" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1611621802985" />
     <state x="117" y="311" width="824" height="491" key="AndroidCreateResourceDirectoryDialog" timestamp="1611525939887">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -208,10 +216,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="261" width="824" height="591" key="AndroidThemeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611531487102" />
-    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611597865780">
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2" timestamp="1611599582933">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611597865780" />
+    <state x="996" y="105" width="912" height="908" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1611599582933" />
     <state x="305" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1611527078012">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -224,26 +232,26 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="170" y="235" width="717" height="644" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1611527218508" />
-    <state width="878" height="178" key="GridCell.Tab.0.bottom" timestamp="1611596749979">
+    <state width="878" height="178" key="GridCell.Tab.0.bottom" timestamp="1611622824598">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1611596749979" />
-    <state width="878" height="178" key="GridCell.Tab.0.center" timestamp="1611596749978">
+    <state width="878" height="178" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824598" />
+    <state width="878" height="178" key="GridCell.Tab.0.center" timestamp="1611622824597">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1611596749978" />
-    <state width="878" height="178" key="GridCell.Tab.0.left" timestamp="1611596749978">
+    <state width="878" height="178" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824597" />
+    <state width="878" height="178" key="GridCell.Tab.0.left" timestamp="1611622824596">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1611596749978" />
-    <state width="878" height="178" key="GridCell.Tab.0.right" timestamp="1611596749979">
+    <state width="878" height="178" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824596" />
+    <state width="878" height="178" key="GridCell.Tab.0.right" timestamp="1611622824598">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="178" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611596749979" />
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611597869001">
+    <state width="878" height="178" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1611622824598" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1611599587197">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611597869001" />
+    <state x="129" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1611599587197" />
     <state x="305" y="468" width="457" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611534656308">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

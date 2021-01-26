@@ -72,6 +72,12 @@
             android:gravity="center"
             android:textSize="16sp" />
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/pokemon_description"
+        android:textAlignment="center" />
     <Button
         android:id="@+id/catch_button"
         android:layout_width="match_parent"

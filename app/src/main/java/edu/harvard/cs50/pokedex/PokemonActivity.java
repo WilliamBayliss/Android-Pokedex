@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.SharedPreferences;
 import com.android.volley.Request;
+import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -40,6 +41,8 @@ public class PokemonActivity extends AppCompatActivity {
     private TextView ability2TextView;
     // Pokemon URL from API
     private String url;
+    // Pokemon description
+    private TextView pDescription;
     private RequestQueue requestQueue;
     // Button to catch/release pokemon
     private Button catchButton;
@@ -64,6 +67,7 @@ public class PokemonActivity extends AppCompatActivity {
         type2TextView = findViewById(R.id.pokemon_type2);
         ability1TextView = findViewById(R.id.pokemon_ability1);
         ability2TextView = findViewById(R.id.pokemon_ability2);
+        pDescription = findViewById(R.id.pokemon_description);
         imageView = findViewById(R.id.pokemon_sprite);
         catchButton = findViewById(R.id.catch_button);
 
@@ -81,7 +85,7 @@ public class PokemonActivity extends AppCompatActivity {
         type1TextView.setText("");
         type2TextView.setText("");
 
-        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
+        JsonObjectRequest request = new JsonObjectRequest(Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -89,6 +93,7 @@ public class PokemonActivity extends AppCompatActivity {
                 loadText(response);
                 loadTypes(response);
                 loadAbilities(response);
+                loadDescription(response);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -136,6 +141,7 @@ public class PokemonActivity extends AppCompatActivity {
             Log.e("Pokedex", "Pokemon Abilities Error", e);
         }
     }
+
     public void loadTypes(JSONObject response) {
         try {
             JSONArray typeEntries = response.getJSONArray("types");
@@ -146,15 +152,50 @@ public class PokemonActivity extends AppCompatActivity {
                 if (slot == 1) {
                     String poke_type1 = type.toUpperCase();
                     type1TextView.setText(poke_type1);
+                    type1TextView.setVisibility(View.VISIBLE);
                 } else if (slot == 2) {
                     String poke_type2 = type.toUpperCase();
                     type2TextView.setText(poke_type2);
+                    type2TextView.setVisibility(View.VISIBLE);
                 }
             }
         } catch (JSONException e) {
             Log.e("Pokedex", "Pokemon Types Error", e);
         }
     }
+
+    public void loadDescription(JSONObject response) {
+        String URL = "";
+        try {
+            URL = response.getJSONObject("species").getString("url");
+        } catch (JSONException e) {
+            Log.e("Pokedex", "Pokemon Desc URL Error");
+        }
+        if (!URL.equals("")) {
+            final JsonObjectRequest requestDescription = new JsonObjectRequest(Method.GET, URL, null, new Response.Listener<JSONObject>() {
+
+                @Override
+                public void onResponse(JSONObject response) {
+                    String flavorText = null;
+                    try {
+                        flavorText = response.getJSONArray("flavor_text_entries").getJSONObject(0).getString("flavor_text");
+                        pDescription.setText(flavorText);
+                    } catch (JSONException e) {
+                        Log.e("Pokedex", "Pokemon flavor text Error");
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.e("Pokedex", "Pokemon Description Error");
+                }
+            });
+            requestQueue.add(requestDescription);
+
+
+        }
+    }
+
 
     public void loadSprites(JSONObject response) {
         try {
@@ -183,6 +224,7 @@ public class PokemonActivity extends AppCompatActivity {
             imageView.setImageBitmap(bitmap);
         }
     }
+
 
 
     public void toggleCatch(View view) {
